@@ -151,3 +151,10 @@ body{background:var(--cream)}
  .footer-brand{font-size:clamp(38px,11vw,55px)}
  .footer-official-logo{width:65px;height:65px}
 }
+
+
+/* Final media layout safeguards */
+.moment-grid-real .moment-image{height:clamp(390px,38vw,510px)}
+@media(max-width:650px){.moment-grid-real .moment-image{height:390px}}
+@media(max-width:480px){.moment-grid-real .moment-image{height:360px}}
+@media(max-width:400px){.hero h1{font-size:clamp(39px,10vw,48px)}.hero h1 em{display:inline;white-space:normal}}
