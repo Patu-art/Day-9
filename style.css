@@ -81,3 +81,73 @@ body{background:var(--cream)}
 @media(max-width:650px){.photo-top{display:block}.photo-top h2{font-size:clamp(43px,9vw,58px)}.photo-account{display:inline-flex;margin-top:22px}.moment-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;margin-right:calc(-1 * var(--pad));padding-right:var(--pad)}.moment,.moment-primary{flex:0 0 min(78vw,360px);scroll-snap-align:start}.moment-image{min-height:295px}.photo-section{padding-top:73px}}
 @media(max-width:480px){.hero h1{font-size:clamp(46px,11vw,57px);line-height:1.08}.hero h1 em{font-size:.91em}.hero-visual{min-height:380px}.hero-bowl{width:100%;left:53%;top:49%}.hero-ticket{top:12%;left:5%;padding:9px 12px;min-width:110px}.hero-ticket strong{font-size:18px}.hero-sunburst{font-size:65px}.floating-label-one{font-size:16px;left:6%;bottom:6%}.floating-label-two{font-size:15px;bottom:6%}.moment{flex-basis:85vw}.moment-image{min-height:310px}.story-main h2{font-size:clamp(43px,10vw,58px)}.bowl-heading h2,.club-intro h2{font-size:clamp(43px,10vw,59px)}.location-section h2{font-size:clamp(47px,10.6vw,65px)}}
 @media(prefers-reduced-motion:reduce){.hero-sunburst,.moment-circle{animation:none}.moment:hover{transform:none}.moment:hover .moment-image-bowl img{transform:none}}
+
+
+/* Uploaded brand-media integration (real photography, logo and reel) */
+:root{--lime:#d6e8a0}
+.brand-wordmark{gap:12px;letter-spacing:-.055em}
+.brand-logo{width:52px;height:52px;flex:none;object-fit:cover;border-radius:50%;border:2px solid rgba(255,247,234,.7);background:#fff}
+.brand-wording{display:block;font-family:'Fraunces',Georgia,serif;font-size:clamp(20px,1.8vw,29px);font-weight:700;line-height:.9;letter-spacing:-.065em;text-transform:lowercase}
+.brand-wording .wordmark-sm{display:block;margin-top:4px;font:700 12px/1.1 'DM Sans',Arial,sans-serif;letter-spacing:-.035em;text-transform:lowercase}
+.hero-visual.hero-visual-photo{background:#ced4bc;isolation:isolate}
+.hero-visual.hero-visual-photo::before{display:none}
+.brand-hero-photo{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:50% 78%}
+.hero-photo-sticker{position:absolute;z-index:3;left:6%;top:14%;width:124px;height:124px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;color:#fff6e9;background:#351a44;border:1px solid #f7e9cd;border-radius:50%;box-shadow:0 0 0 6px rgba(53,26,68,.14);transform:rotate(-12deg)}
+.hero-photo-sticker>span{text-align:center;font:800 24px/.94 'Outfit',Arial,sans-serif;letter-spacing:-.06em}
+.hero-photo-sticker small{font:800 9px/1 'DM Sans',Arial,sans-serif;letter-spacing:.13em;color:var(--lime)}
+.hero-photo-caption{position:absolute;right:15px;bottom:18px;z-index:2;padding:10px 12px;border-radius:7px;background:rgba(26,27,20,.65);backdrop-filter:blur(7px);color:#fff9ef;font:700 9px/1.4 'DM Sans',Arial,sans-serif;letter-spacing:.07em;text-align:right}
+.ingredient-art{background:#e5c5d6}
+.ingredient-art img{width:100%;height:100%;object-fit:cover;object-position:center}
+.moment-grid-real{grid-template-columns:1.13fr .87fr;align-items:stretch}
+.moment-grid-real .moment{margin:0;min-width:0}
+.moment-grid-real .moment-image{min-height:390px;height:100%}
+.moment-image-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 63%}
+.moment-image-video{display:block;background:#301b40}
+.moment-image-video video{display:block;width:100%;height:100%;object-fit:cover;object-position:center 45%;background:#301b40}
+.moment-grid-real .moment-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#351a44}
+.moment-grid-real .moment-meta span{font-size:16px}
+.club-visual-photo{transform:none;box-shadow:0 22px 50px rgba(53,26,68,.10);aspect-ratio:4/3;background:#eadad2;border-radius:18px}
+.club-visual-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.club-visual-photo .poster-corner{top:auto;bottom:18px;left:18px}
+.footer-brand{display:inline-flex;align-items:center;gap:18px;font-size:clamp(37px,5.4vw,84px);line-height:.85}
+.footer-brand>span{padding:0;color:var(--cream);font:800 inherit}
+.footer-official-logo{width:clamp(68px,8vw,104px);height:clamp(68px,8vw,104px);border:2px solid rgba(255,247,234,.5);border-radius:50%;object-fit:cover;flex:none;background:#fff}
+@media(max-width:1100px){
+ .moment-grid-real{grid-template-columns:1.05fr .95fr}
+ .moment-grid-real .moment-primary{grid-row:auto}
+ .moment-grid-real .moment-image{min-height:350px}
+}
+@media(max-width:930px){
+ .brand-wording{font-size:23px}
+ .brand-logo{height:46px;width:46px}
+ .hero-visual.hero-visual-photo{min-height:510px}
+ .brand-hero-photo{object-position:50% 72%}
+ .hero-photo-sticker{left:7%;top:10%}
+}
+@media(max-width:650px){
+ .moment-grid-real{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}
+ .moment-grid-real .moment{flex:0 0 min(80vw,370px);scroll-snap-align:start}
+ .moment-grid-real .moment-image{min-height:390px}
+ .hero-visual.hero-visual-photo{min-height:440px}
+ .hero-photo-sticker{width:105px;height:105px}
+ .hero-photo-sticker>span{font-size:21px}
+ .hero-photo-caption{font-size:8px;max-width:160px}
+ .footer-brand{font-size:clamp(37px,9vw,68px)}
+}
+@media(max-width:480px){
+ .brand-wordmark{gap:7px}
+ .brand-logo{width:39px;height:39px}
+ .brand-wording{font-size:20px}
+ .brand-wording .wordmark-sm{font-size:10px}
+ .hero-visual.hero-visual-photo{min-height:410px}
+ .brand-hero-photo{object-position:50% 72%}
+ .hero-photo-sticker{left:5%;top:7%;width:92px;height:92px;gap:6px}
+ .hero-photo-sticker>span{font-size:18px}
+ .hero-photo-sticker small{font-size:8px}
+ .hero-photo-caption{left:auto;right:12px;bottom:12px}
+ .moment-grid-real .moment{flex-basis:85vw}
+ .moment-grid-real .moment-image{min-height:360px}
+ .club-visual-photo{aspect-ratio:4/3;box-shadow:0 13px 25px rgba(53,26,68,.1)}
+ .footer-brand{font-size:clamp(38px,11vw,55px)}
+ .footer-official-logo{width:65px;height:65px}
+}
