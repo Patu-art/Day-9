@@ -1,24 +1,33 @@
-# Day 9 — Açaí Social Club · Leeds
+# Day 9 — Açaí Social Club, Leeds
 
-An unofficial, frontend-only launch-concept website for an independent açaí pop-up opening its first permanent location in Leeds city centre.
+Unofficial frontend-only concept website for Açaí Social Club's announced first permanent Leeds city-centre location. Built with separate `index.html`, `style.css` and `script.js`, with responsive layouts and local assets.
+
+## Live website
+https://patu-art.github.io/Day-9/
+
+## User-supplied brand media (19 September 2026)
+
+The supplied images and video were imported into `assets/brand/` in the order received:
+
+1. `hero-bowl.png` — photographed bowl held outdoors; used in the hero.
+2. `product-bowls.png` — three photographed bowls; used in the product section and video poster.
+3. `popup.png` — photographed pop-up counter; used in Moments.
+4. `community.png` — photograph of people in an indoor public space; used as social-atmosphere artwork, without identifying people or claiming they are customers.
+5. `official-logo.png` — user-supplied brand logo graphic; shown in header/footer.
+6. `preparation.mp4` — user-supplied food-preparation clip, with accessible player controls and no automatic audio.
+
+These files are committed directly to GitHub, not hotlinked to an external media host. The one-time media import workflow has been removed after hash verification. Other SVGs in `assets/images/` and the favicon remain from the original concept where still useful.
+
+The media files were supplied for this *unofficial demo*. Before presenting or publishing the site as an official business website, obtain the brand's permission to use their photography, logos and video and confirm consent for any recognizable people. The user-provided image/video rights have not been independently verified.
 
 ## Run locally
-Open `index.html` or use VS Code's Live Server extension. No build process, backend, Node.js, API key, account or paid service is needed. HTML, CSS and JS are separate.
 
-## GitHub Pages
-Upload the **contents** of this folder to the root of your Day-9 repository (not a parent folder), then set Settings → Pages → Deploy from a branch → `main` → `/ (root)`. Assets use relative paths.
+Open `index.html` in a browser or run VS Code Live Server. No build step, backend, paid tooling, auth or environment variables. Optional Google Fonts require internet; system fallbacks work offline. All website media use relative repository paths.
 
-## Original assets
-`assets/images/bowl-hero.svg`, `bowl-ingredients.svg`, `social-poster.svg`, and `assets/icons/favicon.svg` are original vector illustrations created for this demo. They are conceptual illustrations, **not photographs or approved branded visuals of the business's actual menu or future store**. The logo treatment, palette and copy are proposed design directions, not claims about Açaí Social Club's official brand.
+## Content notes
 
-The only external requests are optional Google Fonts and user-clicked links to the **verified Instagram account**. System-font fallbacks work when offline.
+Research at the time of the concept confirmed a first permanent Leeds city-centre store announcement, but the precise store address and opening date were not published. The demo does not invent these details or offer ordering, reservations or a made-up full menu. Brand copy and layout are concept proposals and not statements by the owners.
 
-## Content verification
-Research checked 19 September 2026. The Hoot Leeds (18 September 2026) reports the husband-and-wife-run pop-up announcing its first permanent Leeds city-centre store, with exact date/address undisclosed; it confirms açaí, fresh fruit and homemade granola. Victoria Leeds confirms the Victoria Quarter pop-up on 4–5 April 2026. No address, opening day, products beyond published ingredients, price, contact number, live schedule, testimonials, community events or ordering functionality is invented.
+## Check before outreach
 
-- https://thehootleeds.com/business/a-new-acai-cafe-promising-to-be-leeds-neighbourhood-social-club-is-opening-soon/
-- https://www.victorialeeds.co.uk/events/acai-social-club-pop-up/
-- https://www.instagram.com/acaisocialclub_/
-
-## Release checklist
-Replace illustrations with **licensed and approved real business photography** where possible; confirm final official logo and imagery, announcement copy, store address, launch date and product details with the owners. Remove the `UNOFFICIAL WEBSITE CONCEPT` footer note only after the owner agrees the site is official. This build does not collect visitor contact details or pretend to accept orders.
+Confirm brand permission; ask for approved photography and current logo; confirm opening date/address, food menu, ingredients, services and trading details; review mobile menu, video accessibility, responsive layout and browser console. Avoid claiming the page is the official brand website without their approval.
