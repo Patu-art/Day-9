@@ -3,7 +3,8 @@
 Unofficial frontend-only concept website for Açaí Social Club's announced first permanent Leeds city-centre location. Built with separate `index.html`, `style.css` and `script.js`, with responsive layouts and local assets.
 
 ## Live website
-https://patu-art.github.io/Day-9/
+
+[Live demo](https://patu-art.github.io/Day-9/) · [Portfolio](https://patu-art.github.io/Portfolio/) · [Challenge log](https://patu-art.github.io/Portfolio/challenge.html)
 
 ## User-supplied brand media (19 September 2026)
 
